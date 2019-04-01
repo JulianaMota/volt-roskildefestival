@@ -157,8 +157,98 @@ table {
 body {
   font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
+button {
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 9px;
+  color: var(--color-white);
+}
 
 /**************Header****************/
 
 /****nav****/
+nav {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto auto 1fr auto auto auto auto 10%;
+  height: 70px;
+}
+nav a {
+  color: var(--color-white);
+}
+nav .volt-logo {
+  width: 80px;
+  align-self: center;
+  padding: 0 15px;
+}
+nav h1 {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: var(--fsize-20);
+}
+nav ul {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropbtn {
+  background-color: transparent;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-white);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 9px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content h3 {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: var(--fsize-14);
+  background-color: var(--color-lightgrey);
+  font-weight: 600;
+}
+.dropdown-content a:hover {
+  background-color: var(--color-green);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  opacity: 0.6;
+}
+nav .login {
+  align-self: center;
+  background-color: transparent;
+  font-weight: 600;
+}
+
+nav .signup {
+  height: 50px;
+  align-self: center;
+  font-weight: 600;
+}
