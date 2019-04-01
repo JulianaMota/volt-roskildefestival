@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/****************VARIABLES**************/
+
+:root {
+  /**color**/
+  --color-green: #a6cc45;
+  --color-white: #fff;
+  --color-lightgrey: #f6f6f6;
+  --color-grey: #707070;
+  --color-darkgrey: #414141;
+  --color-red: #ff5a5a;
+  --color-black: #000000;
+  /**typefaces**/
+  --font-text: "Proxima Nova", Arial, Helvetica, sans-serif;
+  --fsize-40: 40px;
+  --fsize-30: 30px;
+  --fsize-25: 25px;
+  --fsize-20: 20px;
+  --fsize-18: 18px;
+  --fsize-16: 16px;
+  --fsize-14: 14px;
+  --fsize-12: 12px;
+  --fsize-10: 10px;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.otf") format("truetype");
+}
+body {
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
+}
+
+
+/**************Header****************/
+
+/****nav****/
