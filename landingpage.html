@@ -22,7 +22,7 @@
           src="images/logo-volt-white_400x162.png"
           alt="Volt logo"
         />
-        <h1>Roskilde Festival</h1>
+        <h1 class="roskilde">Roskilde Festival</h1>
         <ul>
           <li><a href="#">Festivals</a></li>
           <li><a href="#">Volunteer</a></li>
@@ -68,17 +68,20 @@
           <h2>Go PowerFull</h2>
         </div>
         <div class="book">
-          <button class="bookNow">Book Now</button>
+          <a href="form.html"><button class="bookNow">Book Now</button></a>
           <p>and win a <span>powerfull pack</span></p>
         </div>
       </section>
+    </header>
+
+    <section id="gopowerfull-section" class="section">
       <section class="fixed-bar">
         <img
           class="volt-logo"
           src="images/logo-volt-black.png"
           alt="Volt logo"
         />
-        <h1>Roskilde Festival</h1>
+        <h1 class="roskilde">Roskilde Festival</h1>
         <div class="price">
           <p>Online Discount: 179 DKK</p>
           <p class="festivalprice">
@@ -89,15 +92,13 @@
           <p class="totalprice">179 DKK + deposit</p>
           <p class="offer">Offer expires in 2 days</p>
         </div>
-        <button class="signup">BOOK NOW</button>
+        <a href="form.html"><button class="signup">BOOK NOW</button></a>
       </section>
-    </header>
-    <section id="gopowerfull-section" class="section">
-      <div>
-        <img src="" alt="volt logo" />
+      <div class="title-gp">
+        <img src="images/logo-volt-black.png" alt="volt logo" />
         <h1>Go PowerFull</h1>
       </div>
-      <section>
+      <section class="reasons-gp">
         <div>
           <i class="far fa-clock"></i>
           <h2>Don't Lose time</h2>
@@ -122,32 +123,34 @@
           </p>
         </div>
       </section>
-      <section>
-        <div>
+      <section id="instagram">
+        <div class="hashtag">
           <i class="fas fa-hashtag"></i>
           <h2>volt_gopowerfull</h2>
         </div>
-        <div>
-          <img src="" alt="instagram" />
+        <div class="insta-logo">
+          <img src="images/Instagram_logo_1200px.png" alt="instagram" />
           <i class="fab fa-instagram"></i>
         </div>
         <div class="sk-instagram-feed" data-embed-id="22232"></div>
         <script src="https://www.sociablekit.com/app/embed/instagram-feed/widget.js"></script>
       </section>
     </section>
-    <section class="section">
-      <div>
-        <img src="" alt="volt logo" />
+    <section id="how-section" class="section">
+      <div class="title-gp">
+        <img src="images/logo-volt-black.png" alt="volt logo" />
         <h1>How does it Work</h1>
       </div>
       <div>
-        <img src="" alt="volt-charger" />
-        <button>Book Now</button>
-        <div>
+        <a href="form.html"> <button>Book Now</button></a>
+        <div class="diagram">
           <h2>Swap when your charger is empty</h2>
-          <img src="" alt="big arrow" />
-          <img src="" alt="arrow" />
-          <img src="" alt="volt charger drawing" />
+          <img src="images/volt-service-diagram_bigarrow.png" alt="big arrow" />
+          <img src="images/volt-service-diagram_arrow.png" alt="arrow" />
+          <img
+            src="images/volt-service-diagram_charger.png"
+            alt="volt charger drawing"
+          />
           <h2>Rent Your Charger</h2>
           <p>
             The <strong>charger is small, waterproof</strong> and it's pocket
@@ -157,8 +160,11 @@
             Comes with a short <strong>custom-made cable</strong> for iPhones,
             Android and USB-C.
           </p>
-          <img src="" alt="arrow" />
-          <img src="" alt="Charging" />
+          <img src="images/volt-service-diagram_arrow.png" alt="arrow" />
+          <img
+            src="images/volt-service-diagram_phonecharge.png"
+            alt="Charging"
+          />
           <h2>Charge your Phone</h2>
           <p>
             The Volt Charger holds <strong>3500 mAh</strong> and provides 1.5A.
@@ -166,8 +172,8 @@
           <p>
             Charge phones in less than 90 min for an iPhone 8 full charge.
           </p>
-          <img src="" alt="arrow" />
-          <img src="" alt="Having Fun" />
+          <img src="images/volt-service-diagram_arrow.png" alt="arrow" />
+          <img src="images/volt-service-diagram_havefun.png" alt="Having Fun" />
           <h2>Go Powerfull</h2>
           <h2>Have Fun</h2>
           <p>
@@ -176,84 +182,87 @@
         </div>
       </div>
     </section>
-    <section class="section">
-      <div>
-        <h2>What I'm Paying for?</h2>
-        <img src="" alt="swap" />
+    <section id="what-section" class="section">
+      <section>
         <div>
-          <h3>Swapping service</h3>
-          <p>250 DKK</p>
-          <p>179 DKK</p>
+          <h2>What I'm Paying for?</h2>
+          <img src="" alt="swap" />
+          <div>
+            <h3>Swapping service</h3>
+            <p>250 DKK</p>
+            <p>179 DKK</p>
+            <p>
+              The swapping service enables you to swap your Volt Charger for a
+              <stron>fully charged once a day</stron> during the festival.
+            </p>
+            <p>
+              You can find the Volt service at our 28 locations. So you will
+              always be sure to be powered up at the festival.
+            </p>
+          </div>
+          <div>
+            <img src="" alt="batery" />
+            <h3>Volt Charger Deposit</h3>
+            <p>(refundable)</p>
+            <p>200 DKK</p>
+            <p>
+              To use our swapping service you'll need our Volt Charger which you
+              pay a deposit for. At the end of the festival you can choose to
+              bring the Volt Charger home or return it and get back your
+              deposit.
+            </p>
+            <p>
+              If you will bring your own Volt Charger, you will be
+              <strong>free of Deposit</strong>.
+            </p>
+          </div>
+        </div>
+        <img src="" alt="arrow" />
+        <div>
+          <h2>You can always cancel</h2>
           <p>
-            The swapping service enables you to swap your Volt Charger for a
-            <stron>fully charged once a day</stron> during the festival.
+            If you end up not attending the festival you can get every single
+            penny back!
           </p>
           <p>
-            You can find the Volt service at our 28 locations. So you will
-            always be sure to be powered up at the festival.
+            If you need to cancel and get a refund before the festival, you will
+            need to submit a <a href="">refund request</a>. You can cancel up
+            until one week before the festival starts.
+          </p>
+        </div>
+      </section>
+      <section>
+        <img src="" alt="friends" />
+        <h2>Sharing is caring</h2>
+        <p>
+          When 5 of your friends book Volt with your link, we'll refund your 200
+          DKK Charger Deposit!
+        </p>
+        <div>
+          <img src="" alt="laptop" />
+          <h3>1. Book Volt</h3>
+          <p>
+            When you book Volt for Roskilde Festival, you'll receive a unique
+            referral link.
           </p>
         </div>
         <div>
-          <img src="" alt="batery" />
-          <h3>Volt Charger Deposit</h3>
-          <p>(refundable)</p>
-          <p>200 DKK</p>
+          <img src="" alt="share" />
+          <h3>2. Share with friends</h3>
           <p>
-            To use our swapping service you'll need our Volt Charger which you
-            pay a deposit for. At the end of the festival you can choose to
-            bring the Volt Charger home or return it and get back your deposit.
-          </p>
-          <p>
-            If you will bring your own Volt Charger, you will be
-            <strong>free of Deposit</strong>.
+            If you share your link with your friends, they will get 5% off the
+            Volt service at Roskilde Festival.
           </p>
         </div>
-      </div>
-      <img src="" alt="arrow" />
-      <div>
-        <h2>You can always cancel</h2>
-        <p>
-          If you end up not attending the festival you can get every single
-          penny back!
-        </p>
-        <p>
-          If you need to cancel and get a refund before the festival, you will
-          need to submit a <a href="">refund request</a>. You can cancel up
-          until one week before the festival starts.
-        </p>
-      </div>
-    </section>
-    <section>
-      <img src="" alt="friends" />
-      <h2>Sharing is caring</h2>
-      <p>
-        When 5 of your friends book Volt with your link, we'll refund your 200
-        DKK Charger Deposit!
-      </p>
-      <div>
-        <img src="" alt="laptop" />
-        <h3>1. Book Volt</h3>
-        <p>
-          When you book Volt for Roskilde Festival, you'll receive a unique
-          referral link.
-        </p>
-      </div>
-      <div>
-        <img src="" alt="share" />
-        <h3>2. Share with friends</h3>
-        <p>
-          If you share your link with your friends, they will get 5% off the
-          Volt service at Roskilde Festival.
-        </p>
-      </div>
-      <div>
-        <img src="" alt="gift" />
-        <h3>3. Free Volt Charger!</h3>
-        <p>
-          When 5 of them book Volt, we'll refund your 200 DKK deposit and you
-          get to keep your Volt Charger at the end of the festival.
-        </p>
-      </div>
+        <div>
+          <img src="" alt="gift" />
+          <h3>3. Free Volt Charger!</h3>
+          <p>
+            When 5 of them book Volt, we'll refund your 200 DKK deposit and you
+            get to keep your Volt Charger at the end of the festival.
+          </p>
+        </div>
+      </section>
     </section>
 
     <footer>
