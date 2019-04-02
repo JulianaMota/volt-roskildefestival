@@ -138,6 +138,8 @@ table {
   --color-darkgrey: #414141;
   --color-red: #ff5a5a;
   --color-black: #000000;
+  --color-darkgrey2: #2b2929;
+  --color-gradientblue: linear-gradient(red, yellow)
   /**typefaces**/
   --font-text: "Proxima Nova", Arial, Helvetica, sans-serif;
   --fsize-40: 40px;
@@ -168,25 +170,27 @@ button {
 }
 
 /**************Header****************/
-
+header{
+  height: 100vh;
+}
 /****nav****/
 nav {
-  background-color: var(--color-black);
+  background-color: var(--color-darkgrey2);
   color: var(--color-white);
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: auto auto 1fr auto auto auto auto 10%;
-  height: 70px;
+  height: 65px;
 }
 nav a {
   color: var(--color-white);
 }
-nav .volt-logo {
+.volt-logo {
   width: 80px;
   align-self: center;
   padding: 0 15px;
 }
-nav h1 {
+h1 {
   align-self: center;
   text-transform: uppercase;
   font-size: var(--fsize-20);
@@ -196,6 +200,11 @@ nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 40% 0 3%;
+}
+nav ul li {
+  font-size: var(--fsize-14);
+  font-weight: 600;
 }
 
 .dropbtn {
@@ -208,6 +217,7 @@ nav ul {
 .dropdown {
   position: relative;
   display: inline-block;
+  align-self: center;
 }
 .dropdown-content {
   display: none;
@@ -241,14 +251,113 @@ nav ul {
 .dropdown:hover .dropbtn {
   opacity: 0.6;
 }
+nav .cart {
+  align-self: center;
+}
 nav .login {
+  font-size: var(--fsize-14);
   align-self: center;
   background-color: transparent;
   font-weight: 600;
+  padding: 0 30px 0 30px;
 }
-
-nav .signup {
-  height: 50px;
+.signup {
+  font-size: var(--fsize-14);
+  height: 40px;
   align-self: center;
   font-weight: 600;
+  padding: 0 15px 0 15px;
 }
+
+/***video***/
+.video-section {
+  display: grid;
+  grid-template: 1fr/1fr;
+  background-image: linear-gradient( to right, rgb(69, 179, 219), #3CAACE); 
+}
+video {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 90vw;
+  height: 90vh;
+  justify-self: center;
+}
+
+.video-section .arrow{
+  width: 80px;
+  height: 80px;
+  -webkit-clip-path: polygon(50% 84%, 91% 34%, 100% 41%, 50% 100%, 0 40%, 8% 33%);
+  clip-path: polygon(50% 84%, 91% 34%, 100% 41%, 50% 100%, 0 40%, 8% 33%);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 3;
+  background-color:var(--color-black);
+  justify-self: center;
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+.video-section .arrow:hover{
+  animation: arrowmove 0.5s ease-in infinite;
+}
+@keyframes arrowmove{
+  50%{
+    transform:translate3d(0, 20px, 0) ;
+  }
+}
+.video-section .slogan{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 1;
+  align-self: flex-end;
+  padding:  0 0 5% 15%;
+}
+.video-section .slogan img{
+  height: 100px; 
+}
+.video-section .slogan h2{
+  color: var(--color-white);
+  font-size: var(--fsize-40);
+  
+}
+.video-section .book{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  z-index: 2;
+  justify-self: right;
+}
+/**fixed bar**/
+
+.fixed-bar{
+  background-color: var(--color-lightgrey);
+  display: grid;
+  grid-template: 1fr/ auto auto 1fr auto auto 3%;
+  height: 80px;
+}
+.fixed-bar .price{
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fsize-16);
+}
+.fixed-bar .total{
+  padding-right: 20px;
+  align-self: center;
+  justify-self: right;
+  text-align: right;
+  font-size: var(--fsize-16);
+
+}
+.festivalprice{
+padding-top: 5px;
+color: var(--color-grey)
+}
+.totalprice{
+  color: var(--color-grey)
+}
+.offer{
+  padding-top: 5px;
+  color: var(--color-red)
+}
+.fixed-bar button{
+  margin-right: 5%;
+}
+
