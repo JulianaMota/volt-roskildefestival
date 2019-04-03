@@ -646,7 +646,7 @@ video {
   background-color: var(--color-green);
   display: grid;
   grid-template: auto/ 2fr auto 1fr;
-  height: 50vh;
+  height: auto;
   margin-bottom: 100px;
 }
 #what-section .paying-section .arrow-white {
