@@ -548,11 +548,13 @@ color: var(--color-grey)
   grid-row: 6/7;
   grid-column: 3/4;
   font-size: var(--fsize-14);
+  line-height: 1.3;
 }
 #how-section .diagram .chargerdetail2-diagram{
   grid-row: 5/6;
   grid-column: 3/4;
   font-size: var(--fsize-14);
+  line-height: 1.3;
 }
 #how-section .diagram .arrow2-diagram{
   grid-row: 3/4;
@@ -577,11 +579,13 @@ color: var(--color-grey)
   grid-row: 5/6;
   grid-column: 5/6;
   font-size: var(--fsize-14);
+  line-height: 1.3;
 }
 #how-section .diagram .chargerpower2-diagram{
   grid-row: 6/7;
   grid-column: 5/6;
   font-size: var(--fsize-14);
+  line-height: 1.3;
 }
 #how-section .diagram .arrow3-diagram{
   grid-row: 3/4;
@@ -608,7 +612,7 @@ color: var(--color-grey)
   grid-row: 5/6;
   grid-column: 7/8;
   font-size: var(--fsize-20);
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
 }
 /***********WHAT section **********/
@@ -617,7 +621,118 @@ color: var(--color-grey)
   height: 100vh;
   display: grid;
 }
+#what-section .paying-section{
+  background-color: var(--color-green);
+  display: grid;
+  grid-template: auto/ 2fr auto 1fr;
+  height: 50vh;
+}
+#what-section .paying-section .arrow-white{
+  box-sizing: border-box;
+  height: 100%;
+  width: 100px;
+}
 
-.paying-section{
+/*****what paying***/
+#what-section .paying-section .whatPaying{
+  display: grid;
+  grid-template: auto 1fr/ auto 1fr auto 1fr; 
+  column-gap: 20px;
+  padding: 20px;
+}
+#what-section .paying-section .whatPaying img{
+  width: 40px;
+}
+#what-section .paying-section h2{
+ grid-column: 1/5;
+ grid-row: 1/2;
+ color: var(--color-white);
+ font-size: var(--fsize-30);
+  padding: 10px 0 20px 0;
+}
+#what-section .paying-section .whatPaying .sawping-logo{
+  grid-column: 1/2;
+ grid-row: 2/3;
+}
+#what-section .paying-section .whatPaying .batery-logo{
+  grid-column: 3/4;
+ grid-row: 2/3;
+}
+#what-section .paying-section .whatPaying .gridPay{
+  display: grid;
+  grid-template: auto 1fr 1fr/ 2fr 1fr 1fr;
+  grid-row-gap: 10px;
+}
+#what-section .paying-section .whatPaying .gridPay h3{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-size: var(--fsize-20);
+  color: var(--color-white);
+}
+#what-section .paying-section .whatPaying .gridPay .price1{
+  grid-row: 1/2;
+  grid-column: 3/4;
+  color: var(--color-white);
+}
+#what-section .paying-section .whatPaying .gridPay .price2{
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+#what-section .paying-section .whatPaying .gridPay .textprice1{
+  grid-row: 2/3;
+  grid-column: 1/4;
+  line-height: 1.3;
+}
+#what-section .paying-section .whatPaying .gridPay .textprice2{
+  grid-row: 3/4;
+  grid-column: 1/4;
+  line-height: 1.3;
+}
+#what-section .paying-section .whatPaying .gridPay .textprice2,
+#what-section .paying-section .whatPaying .gridPay .textprice1{
+  font-size: var(--fsize-16);
+  color: var(--color-grey);
+}
+#realprice{
+ color: var(--color-white);
+ opacity: 0.5;
+ text-decoration: line-through;
+ text-align: right;
+ padding-right: 5px;
+}
+#refundabel{
+ color: var(--color-grey);
+ font-weight: bold;
+ text-align: left;
+}
+#what-section .paying-section strong{
+  font-weight: bolder;
+}
 
+/*****Cancel*****/
+#what-section .paying-section .cancel{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#what-section .paying-section .cancel .cancelp1{
+  color: var(--color-white);
+  font-size: var(--fsize-20);
+  line-height: 1.3;
+}
+#what-section .paying-section .cancel .cancelp2{
+  color: var(--color-grey);
+  font-size: var(--fsize-16);
+  line-height: 1.3;
+  padding-top: 20px;
+}
+
+/*****SHARING IS CARING SECTION*****/
+#what-section #Sharing-section{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+
+#what-section #Sharing-section img{
+  width: 20px;
 }
