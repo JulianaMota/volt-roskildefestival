@@ -10,7 +10,6 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
     <link rel="stylesheet" href="css/landingpage.css" />
     <title>Volt Roskild Festival - Landing Page</title>
   </head>
@@ -59,41 +58,36 @@
         <button class="signup">SIGN UP</button>
       </nav>
       <section class="video-section">
-        <video autoplay>
+        <video>
           <source src="video/VOLT_animationsfilm.mp4" />
         </video>
         <div class="arrow"></div>
-        <div class="slogan">
+        <div class="slogan hide">
           <img src="images/logo-volt-white_400x162.png" alt="logo volt" />
           <h2>Go PowerFull</h2>
         </div>
-        <div class="book">
+        <div class="book hide">
           <a href="form.html"><button class="bookNow">Book Now</button></a>
           <p>and win a <span>powerfull pack</span></p>
         </div>
       </section>
     </header>
-
+    <section class="fixed-bar">
+      <img class="volt-logo" src="images/logo-volt-black.png" alt="Volt logo" />
+      <h1 class="roskilde">Roskilde Festival</h1>
+      <div class="price">
+        <p>Online Discount: 179 DKK</p>
+        <p class="festivalprice">
+          The swapping service at the festival: 250 DKK
+        </p>
+      </div>
+      <div class="total">
+        <p class="totalprice">179 DKK + deposit</p>
+        <p class="offer">Offer expires in 2 days</p>
+      </div>
+      <a href="form.html"><button class="signup">BOOK NOW</button></a>
+    </section>
     <section id="gopowerfull-section" class="section">
-      <section class="fixed-bar">
-        <img
-          class="volt-logo"
-          src="images/logo-volt-black.png"
-          alt="Volt logo"
-        />
-        <h1 class="roskilde">Roskilde Festival</h1>
-        <div class="price">
-          <p>Online Discount: 179 DKK</p>
-          <p class="festivalprice">
-            The swapping service at the festival: 250 DKK
-          </p>
-        </div>
-        <div class="total">
-          <p class="totalprice">179 DKK + deposit</p>
-          <p class="offer">Offer expires in 2 days</p>
-        </div>
-        <a href="form.html"><button class="signup">BOOK NOW</button></a>
-      </section>
       <div class="title-gp">
         <img src="images/logo-volt-black.png" alt="volt logo" />
         <h1>Go PowerFull</h1>
@@ -333,6 +327,6 @@
         <p>Job positions</p>
       </div>
     </footer>
-    <script type="text/javascript" src="fullpage.js"></script>
+    <script src="js/landingpage.js"></script>
   </body>
 </html>
