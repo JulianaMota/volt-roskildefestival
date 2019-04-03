@@ -730,9 +730,101 @@ color: var(--color-grey)
 /*****SHARING IS CARING SECTION*****/
 #what-section #Sharing-section{
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template: auto auto auto / 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  column-gap: 20px;
+}
+#what-section #Sharing-section img{
+  width: 100%;
+  box-sizing: border-box;
+}
+#what-section #Sharing-section .imgfriends{
+  grid-column: 1/2;
+  grid-row: 1/-1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-#what-section #Sharing-section img{
-  width: 20px;
+#what-section #Sharing-section h2{
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  font-size: var(--fsize-30)
+}
+
+#what-section #Sharing-section p{
+  grid-column: 2/-1;
+  grid-row: 2/3;
+  font-size: var(--fsize-18);
+}
+
+#what-section #Sharing-section div{
+  display: grid;
+  grid-template: auto auto /1fr 1fr;
+  column-gap: 20px;;
+}
+#what-section #Sharing-section div img{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+#what-section #Sharing-section div h3{
+  font-size: var(--fsize-18);
+  align-self: flex-end;
+  padding-bottom: 10px;;
+  }
+#what-section #Sharing-section div p{
+font-size: var(--fsize-14);
+line-height: 1.3;
+}
+
+/*****************FOOTER*****************/
+footer{
+  display: grid;
+  grid-template: 1fr/2fr 3fr 1fr 1fr;
+  background-color: var(--color-darkgrey2);
+  color: var(--color-grey);
+  padding: 20px
+}
+footer .social-links{
+  font-size: 20px;
+  align-self: center;
+  justify-self: center;
+}
+footer .social-links i{
+  padding: 0 10px; 
+}
+footer .logos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .logos div{
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+footer .logos div img{
+  height: 30px;
+  margin: 0 10px;
+}
+footer .logos div h2{
+  color: var(--color-white);
+  
+}
+footer .logos p{
+  padding-bottom: 10px;
+  text-align: center
+}
+footer .addressVOLT p,
+footer .moreinfo p{
+ font-size: var(--fsize-14);
+}
+footer .addressVOLT h2{
+  font-size: var(--fsize-16);
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+footer .moreinfo{
+  justify-self: center;
+  align-self: center;
 }
