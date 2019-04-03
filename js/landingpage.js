@@ -7,6 +7,7 @@ console.log(videoheader);
 window.addEventListener("load", init);
 
 function init() {
+  alert("Student Project from KEA | This is not the official VOLT website");
   videoheader.play();
 
   videoheader.onended = function() {

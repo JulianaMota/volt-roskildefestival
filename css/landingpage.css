@@ -177,6 +177,9 @@ header {
   height: 100vh;
 }
 /****nav****/
+.burger-menu {
+  display: none;
+}
 nav {
   background-color: var(--color-darkgrey2);
   color: var(--color-white);
@@ -848,4 +851,45 @@ footer .moreinfo {
   align-self: center;
 }
 
+@media only screen and (max-width: 700px) {
+  nav .roskilde,
+  nav ul,
+  nav .login,
+  nav .signup {
+    display: none;
+  }
+  nav {
+    color: var(--color-white);
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto auto auto;
+    height: 65px;
+  }
 
+  /* burger-menu */
+
+  .burger-menu {
+    display: block;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    align-self: center;
+  }
+  .container {
+    display: grid;
+  }
+  .burger-menu .bar1,
+  .burger-menu .bar2,
+  .burger-menu .bar3 {
+    display: grid;
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 7px 0px 0px 0px;
+    transition: 0.4s;
+    justify-self: center;
+  }
+  .burger-menu .bar2 {
+    width: 40px;
+  }
+}

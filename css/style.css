@@ -4,6 +4,9 @@
   font-family: Proxima;
   src: url(../fonts/ProximaNova-Regular.otf);
 }
+body {
+  margin: 0;
+}
 /****nav****/
 nav {
   background-color: #2b2929;
@@ -548,6 +551,7 @@ form {
   padding: 0px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
   /* grid-area: area3; */
 }
 
