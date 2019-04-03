@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i");
 
 @font-face {
-  font-family: "Proxima";
+  font-family: "Proxima Nova";
   src: url("../fonts/ProximaNova-Regular.otf") format("truetype");
 }
 /****nav****/
@@ -110,7 +110,7 @@ ul {
 body {
   margin: 0;
   background: #f4f4f4;
-  font-family: "Proxima";
+  font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
 }
 section {
   border-radius: 7px;
